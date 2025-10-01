@@ -1,8 +1,10 @@
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { useI18n } from './i18n';
+import { useEffect, useState } from 'react';
 
 export const Footer = () => {
   const { t } = useI18n();
+  const [isDark, setIsDark] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -10,6 +12,16 @@ export const Footer = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDark(document.documentElement.classList.contains('dark'));
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+    setIsDark(document.documentElement.classList.contains('dark'));
+    return () => observer.disconnect();
+  }, []);
+
 
   return (
     <footer className="bg-foreground text-background">
@@ -21,7 +33,7 @@ export const Footer = () => {
               {/* <div className="w-8 h-8 bg-background text-foreground rounded-lg flex items-center justify-center">
                 <span className="font-bold">M</span>
               </div> */}
-              <img src="/logo2.png" className="w-8 h-auto" alt="MediTrack Logo" />
+              <img src="/logo2.png" className="w-8 h-auto" style={{ filter: isDark ? 'invert(1)' : 'invert(0)' }} alt="MediTrack Logo" />
               <span className="text-xl font-semibold">MediTrack</span>
             </div>
             <p className="text-background/80 text-sm">
