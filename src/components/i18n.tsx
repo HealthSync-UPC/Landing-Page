@@ -65,6 +65,30 @@ const translations = {
     'contact.message': 'Mensaje',
     'contact.send': 'Enviar Mensaje',
 
+    // Contact Form extras
+    'contact.header': 'Envíanos un mensaje',
+    'contact.description': 'Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.',
+    'contact.placeholder.name': 'Tu nombre completo',
+    'contact.placeholder.email': 'tu.email@hospital.com',
+    'contact.placeholder.message': 'Cuéntanos sobre tu institución y qué necesitas...',
+    'contact.success': '¡Mensaje enviado! Te contactaremos pronto.',
+    'contact.sending': 'Enviando...',
+
+    // Company Info
+    'company.description': 'Transformando la gestión de inventarios médicos con tecnología IoT',
+    'company.location': 'Lima, Perú',
+
+    // Why Choose Us
+    'whyus.title': '¿Por qué elegirnos?',
+    'whyus.experience.title': 'Experiencia Comprobada',
+    'whyus.experience.desc': 'Más de 50 hospitales confían en nuestra tecnología',
+    'whyus.support.title': 'Soporte 24/7',
+    'whyus.support.desc': 'Equipo técnico disponible cuando lo necesites',
+    'whyus.implementation.title': 'Implementación Rápida',
+    'whyus.implementation.desc': 'Operativo en menos de 2 semanas',
+    'whyus.roi.title': 'ROI Garantizado',
+    'whyus.roi.desc': 'Reduce pérdidas hasta en un 50%',
+
     // Footer
     'footer.mission': 'Misión',
     'footer.mission.text': 'Optimizar la administración de inventarios médicos mediante soluciones IoT que garanticen disponibilidad, conservación y trazabilidad.',
@@ -75,67 +99,92 @@ const translations = {
   },
   en: {
     // Navigation
-    "nav.home": "Home",
-    "nav.benefits": "Benefits",
-    "nav.pricing": "Pricing",
-    "nav.contact": "Contact",
+    'nav.home': 'Home',
+    'nav.benefits': 'Benefits',
+    'nav.pricing': 'Pricing',
+    'nav.contact': 'Contact',
 
     // Hero Section
-    "hero.title": "Transforming Medical Inventory Management",
-    "hero.subtitle": "MediTrack uses IoT to monitor in real time the conditions of medicines and medical supplies, ensuring safety and efficiency.",
-    "hero.cta": "Get Started",
-    "hero.demo": "View Demo",
+    'hero.title': 'Transforming Medical Inventory Management',
+    'hero.subtitle': 'MediTrack uses IoT to monitor in real time the conditions of medicines and medical supplies, ensuring safety and efficiency.',
+    'hero.cta': 'Get Started',
+    'hero.demo': 'View Demo',
 
     // Benefits Section
-    "benefits.title": "Why choose MediTrack?",
-    "benefits.realtime.title": "Real-Time Monitoring",
-    "benefits.realtime.desc": "IoT sensors that monitor temperature, humidity, and location 24/7",
-    "benefits.alerts.title": "Automatic Alerts",
-    "benefits.alerts.desc": "Instant notifications for any anomaly or risk",
-    "benefits.analytics.title": "Multi-Platform Access",
-    "benefits.analytics.desc": "Check and manage inventory from mobile app or web, anywhere, anytime.",
-    "benefits.compliance.title": "Regulatory Compliance",
-    "benefits.compliance.desc": "Ensures compliance with health standards and regulations",
-    "benefits.efficiency.title": "Operational Efficiency",
-    "benefits.efficiency.desc": "Reduces losses and optimizes inventory management",
-    "benefits.security.title": "Patient Safety",
-    "benefits.security.desc": "Ensures the quality of medicines and critical supplies",
+    'benefits.title': 'Why choose MediTrack?',
+    'benefits.realtime.title': 'Real-Time Monitoring',
+    'benefits.realtime.desc': 'IoT sensors that monitor temperature, humidity, and location 24/7',
+    'benefits.alerts.title': 'Automatic Alerts',
+    'benefits.alerts.desc': 'Instant notifications for any anomaly or risk',
+    'benefits.analytics.title': 'Multi-Platform Access',
+    'benefits.analytics.desc': 'Check and manage inventory from mobile app or web, anywhere, anytime.',
+    'benefits.compliance.title': 'Regulatory Compliance',
+    'benefits.compliance.desc': 'Ensures compliance with health standards and regulations',
+    'benefits.efficiency.title': 'Operational Efficiency',
+    'benefits.efficiency.desc': 'Reduces losses and optimizes inventory management',
+    'benefits.security.title': 'Patient Safety',
+    'benefits.security.desc': 'Ensures the quality of medicines and critical supplies',
 
     // Pricing Section
-    "pricing.title": "Plans & Pricing",
-    "pricing.subtitle": "Choose the plan that best suits your institution",
-    "pricing.basic.title": "Basic",
-    "pricing.basic.price": "$299/month",
-    "pricing.basic.desc": "Ideal for small clinics",
-    "pricing.basic.features": "Up to 50 sensors,Basic monitoring,Monthly reports,Email support",
-    "pricing.pro.title": "Professional",
-    "pricing.pro.price": "$599/month",
-    "pricing.pro.desc": "For medium-sized hospitals",
-    "pricing.pro.features": "Up to 200 sensors,Real-time reports,Priority support,Custom API",
-    "pricing.enterprise.title": "Enterprise",
-    "pricing.enterprise.price": "Custom",
-    "pricing.enterprise.desc": "For large institutions",
-    "pricing.enterprise.features": "Unlimited sensors,Full integration,Dedicated support,Total customization",
-    "pricing.cta": "Choose Plan",
-    "pricing.contact": "Contact",
+    'pricing.title': 'Plans & Pricing',
+    'pricing.subtitle': 'Choose the plan that best suits your institution',
+    'pricing.basic.title': 'Basic',
+    'pricing.basic.price': '$299/month',
+    'pricing.basic.desc': 'Ideal for small clinics',
+    'pricing.basic.features': 'Up to 50 sensors,Basic monitoring,Monthly reports,Email support',
+    'pricing.pro.title': 'Professional',
+    'pricing.pro.price': '$599/month',
+    'pricing.pro.desc': 'For medium-sized hospitals',
+    'pricing.pro.features': 'Up to 200 sensors,Real-time reports,Priority support,Custom API',
+    'pricing.enterprise.title': 'Enterprise',
+    'pricing.enterprise.price': 'Custom',
+    'pricing.enterprise.desc': 'For large institutions',
+    'pricing.enterprise.features': 'Unlimited sensors,Full integration,Dedicated support,Total customization',
+    'pricing.cta': 'Choose Plan',
+    'pricing.contact': 'Contact',
 
     // Contact Section
-    "contact.title": "Contact Us",
-    "contact.subtitle": "Ready to transform your medical inventory management?",
-    "contact.name": "Name",
-    "contact.email": "Email",
-    "contact.message": "Message",
-    "contact.send": "Send Message",
+    'contact.title': 'Contact Us',
+    'contact.subtitle': 'Ready to transform your medical inventory management?',
+    'contact.name': 'Name',
+    'contact.email': 'Email',
+    'contact.message': 'Message',
+    'contact.send': 'Send Message',
+
+    // Contact Form extras
+    'contact.header': 'Send us a message',
+    'contact.description': 'Complete the form and we will get in touch with you within 24 hours.',
+    'contact.placeholder.name': 'Your full name',
+    'contact.placeholder.email': 'your.email@hospital.com',
+    'contact.placeholder.message': 'Tell us about your institution and what you need...',
+    'contact.success': 'Message sent! We will contact you soon.',
+    'contact.sending': 'Sending...',
+
+    // Company Info
+    'company.description': 'Transforming medical inventory management with IoT technology',
+    'company.location': 'Lima, Peru',
+
+    // Why Choose Us
+    'whyus.title': 'Why choose us?',
+    'whyus.experience.title': 'Proven Experience',
+    'whyus.experience.desc': 'More than 50 hospitals trust our technology',
+    'whyus.support.title': '24/7 Support',
+    'whyus.support.desc': 'Technical team available whenever you need',
+    'whyus.implementation.title': 'Fast Implementation',
+    'whyus.implementation.desc': 'Operational in less than 2 weeks',
+    'whyus.roi.title': 'Guaranteed ROI',
+    'whyus.roi.desc': 'Reduce losses by up to 50%',
 
     // Footer
-    "footer.mission": "Mission",
-    "footer.mission.text": "Optimize medical inventory management through IoT solutions that ensure availability, preservation, and traceability.",
-    "footer.links": "Links",
-    "footer.contact": "Contact",
-    "footer.email": "contact@healthsync.com",
-    "footer.rights": "© 2025 HealthSync. All rights reserved."
+    'footer.mission': 'Mission',
+    'footer.mission.text': 'Optimize medical inventory management through IoT solutions that ensure availability, preservation, and traceability.',
+    'footer.links': 'Links',
+    'footer.contact': 'Contact',
+    'footer.email': 'contact@healthsync.com',
+    'footer.rights': '© 2025 HealthSync. All rights reserved.',
   }
 };
+
 
 export const I18nProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>('es');

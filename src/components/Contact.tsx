@@ -4,7 +4,7 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin, Send } from 'lucide-react';
 import { useI18n } from './i18n';
 
 export const Contact = () => {
@@ -23,7 +23,7 @@ export const Contact = () => {
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
 
-    alert('¡Mensaje enviado! Te contactaremos pronto.');
+    alert(t('contact.success')); // 🔹 traducible
     setFormData({ name: '', email: '', message: '' });
     setIsSubmitting(false);
   };
@@ -53,9 +53,9 @@ export const Contact = () => {
           {/* Contact Form */}
           <Card>
             <CardHeader>
-              <CardTitle>Envíanos un mensaje</CardTitle>
+              <CardTitle>{t('contact.header')}</CardTitle>
               <CardDescription>
-                Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.
+                {t('contact.description')}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -68,7 +68,7 @@ export const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="Tu nombre completo"
+                    placeholder={t('contact.placeholder.name')}
                   />
                 </div>
 
@@ -81,7 +81,7 @@ export const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="tu.email@hospital.com"
+                    placeholder={t('contact.placeholder.email')}
                   />
                 </div>
 
@@ -93,7 +93,7 @@ export const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    placeholder="Cuéntanos sobre tu institución y qué necesitas..."
+                    placeholder={t('contact.placeholder.message')}
                     rows={4}
                   />
                 </div>
@@ -104,7 +104,7 @@ export const Contact = () => {
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
-                    <>Enviando...</>
+                    <>{t('contact.sending')}</>
                   ) : (
                     <>
                       <Send className="w-4 h-4 mr-2" />
@@ -123,17 +123,17 @@ export const Contact = () => {
               <CardHeader>
                 <CardTitle>HealthSync</CardTitle>
                 <CardDescription>
-                  Transformando la gestión de inventarios médicos con tecnología IoT
+                  {t('company.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span>contacto@healthsync.com</span>
+                  <span>{t('footer.email')}</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-primary" />
-                  <span>Lima, Perú</span>
+                  <span>{t('company.location')}</span>
                 </div>
               </CardContent>
             </Card>
@@ -141,35 +141,35 @@ export const Contact = () => {
             {/* Why Choose Us */}
             <Card>
               <CardHeader>
-                <CardTitle>¿Por qué elegirnos?</CardTitle>
+                <CardTitle>{t('whyus.title')}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold">Experiencia Comprobada</h4>
-                    <p className="text-sm text-muted-foreground">Más de 50 hospitales confían en nuestra tecnología</p>
+                    <h4 className="font-semibold">{t('whyus.experience.title')}</h4>
+                    <p className="text-sm text-muted-foreground">{t('whyus.experience.desc')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold">Soporte 24/7</h4>
-                    <p className="text-sm text-muted-foreground">Equipo técnico disponible cuando lo necesites</p>
+                    <h4 className="font-semibold">{t('whyus.support.title')}</h4>
+                    <p className="text-sm text-muted-foreground">{t('whyus.support.desc')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold">Implementación Rápida</h4>
-                    <p className="text-sm text-muted-foreground">Operativo en menos de 2 semanas</p>
+                    <h4 className="font-semibold">{t('whyus.implementation.title')}</h4>
+                    <p className="text-sm text-muted-foreground">{t('whyus.implementation.desc')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold">ROI Garantizado</h4>
-                    <p className="text-sm text-muted-foreground">Reduce pérdidas hasta en un 50%</p>
+                    <h4 className="font-semibold">{t('whyus.roi.title')}</h4>
+                    <p className="text-sm text-muted-foreground">{t('whyus.roi.desc')}</p>
                   </div>
                 </div>
               </CardContent>
