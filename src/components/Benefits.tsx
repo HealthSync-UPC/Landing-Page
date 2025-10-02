@@ -95,23 +95,23 @@ export const Benefits = () => {
             <div className="absolute inset-0 flex items-center">
               <div className="max-w-2xl px-8 md:px-12">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                  Tecnología IoT Avanzada
+                  {t('benefits.iot.title')}
                 </h3>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Nuestros sensores inteligentes se integran perfectamente con tu infraestructura existente, proporcionando datos precisos y confiables las 24 horas del día.
+                  {t('benefits.iot.desc')}
                 </p>
                 <div className="flex items-center space-x-6">
                   <div className="text-center">
                     <div className="text-xl font-bold text-accent">1000+</div>
-                    <div className="text-sm text-muted-foreground">Sensores Activos</div>
+                    <div className="text-sm text-muted-foreground">{t('benefits.activeSensors')}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-xl font-bold text-accent">50+</div>
-                    <div className="text-sm text-muted-foreground">Hospitales</div>
+                    <div className="text-sm text-muted-foreground">{t('benefits.hospitals')}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-xl font-bold text-accent">99.8%</div>
-                    <div className="text-sm text-muted-foreground">Precisión</div>
+                    <div className="text-sm text-muted-foreground">{t('benefits.accuracy')}</div>
                   </div>
                 </div>
               </div>

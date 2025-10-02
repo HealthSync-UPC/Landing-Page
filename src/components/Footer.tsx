@@ -37,7 +37,7 @@ export const Footer = () => {
               <span className="text-xl font-semibold">MediTrack</span>
             </div>
             <p className="text-background/80 text-sm">
-              Transformando la gestión de inventarios médicos con tecnología IoT innovadora.
+              {t('footer.slogan')}
             </p>
           </div>
 

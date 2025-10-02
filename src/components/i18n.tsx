@@ -23,6 +23,8 @@ const translations = {
     'hero.subtitle': 'MediTrack utiliza IoT para monitorear en tiempo real las condiciones de medicamentos e insumos médicos, garantizando seguridad y eficiencia.',
     'hero.cta': 'Comenzar Ahora',
     'hero.demo': 'Ver Demo',
+    'hero.status.label': 'Estado',
+    'hero.status.optimal': 'Óptimo',
 
     // Benefits Section
     'benefits.title': '¿Por qué elegir MediTrack?',
@@ -38,6 +40,11 @@ const translations = {
     'benefits.efficiency.desc': 'Reduce pérdidas y optimiza la gestión de inventarios',
     'benefits.security.title': 'Seguridad del Paciente',
     'benefits.security.desc': 'Asegura la calidad de medicamentos e insumos críticos',
+    'benefits.iot.title': 'Tecnología IoT Avanzada',
+    'benefits.iot.desc': 'Nuestros sensores inteligentes se integran perfectamente con tu infraestructura existente, proporcionando datos precisos y confiables las 24 horas del día.',
+    'benefits.activeSensors': 'Sensores Activos',
+    'benefits.hospitals': 'Hospitales',
+    'benefits.accuracy': 'Precisión',
 
     // Pricing Section
     'pricing.title': 'Planes y Precios',
@@ -56,6 +63,8 @@ const translations = {
     'pricing.enterprise.features': 'Sensores ilimitados,Integración completa,Soporte dedicado,Personalización total',
     'pricing.cta': 'Elegir Plan',
     'pricing.contact': 'Contactar',
+    'pricing.custom.title': '¿Necesitas algo personalizado?',
+    'pricing.custom.desc': 'Contáctanos para obtener una cotización específica para tu institución de salud.',
 
     // Contact Section
     'contact.title': 'Contactanos',
@@ -96,6 +105,7 @@ const translations = {
     'footer.contact': 'Contacto',
     'footer.email': 'contacto@healthsync.com',
     'footer.rights': '© 2025 HealthSync. Todos los derechos reservados.',
+    'footer.slogan': 'Transformando la gestión de inventarios médicos con tecnología IoT innovadora.',
   },
   en: {
     // Navigation
@@ -109,6 +119,8 @@ const translations = {
     'hero.subtitle': 'MediTrack uses IoT to monitor in real time the conditions of medicines and medical supplies, ensuring safety and efficiency.',
     'hero.cta': 'Get Started',
     'hero.demo': 'View Demo',
+    'hero.status.label': 'Status',
+    'hero.status.optimal': 'Optimal',
 
     // Benefits Section
     'benefits.title': 'Why choose MediTrack?',
@@ -124,6 +136,11 @@ const translations = {
     'benefits.efficiency.desc': 'Reduces losses and optimizes inventory management',
     'benefits.security.title': 'Patient Safety',
     'benefits.security.desc': 'Ensures the quality of medicines and critical supplies',
+    'benefits.iot.title': 'Advanced IoT Technology',
+    'benefits.iot.desc': 'Our smart sensors integrate seamlessly with your existing infrastructure, providing accurate and reliable data 24/7.',
+    'benefits.activeSensors': 'Active Sensors',
+    'benefits.hospitals': 'Hospitals',
+    'benefits.accuracy': 'Accuracy',
 
     // Pricing Section
     'pricing.title': 'Plans & Pricing',
@@ -142,6 +159,8 @@ const translations = {
     'pricing.enterprise.features': 'Unlimited sensors,Full integration,Dedicated support,Total customization',
     'pricing.cta': 'Choose Plan',
     'pricing.contact': 'Contact',
+    'pricing.custom.title': 'Need something customized?',
+    'pricing.custom.desc': 'Contact us to get a tailored quote for your healthcare institution.',
 
     // Contact Section
     'contact.title': 'Contact Us',
@@ -182,6 +201,7 @@ const translations = {
     'footer.contact': 'Contact',
     'footer.email': 'contact@healthsync.com',
     'footer.rights': '© 2025 HealthSync. All rights reserved.',
+    'footer.slogan': 'Transforming medical inventory management with innovative IoT technology.',
   }
 };
 

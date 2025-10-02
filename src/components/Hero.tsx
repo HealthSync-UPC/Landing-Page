@@ -73,7 +73,7 @@ export const Hero = () => {
               <div className="absolute bottom-4 left-4 bg-background/90 backdrop-blur-sm rounded-lg p-3 shadow-lg">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                  <span className="text-sm">Status: Óptimo</span>
+                  <span className="text-sm">{t('hero.status.label')}: {t('hero.status.optimal')}</span>
                 </div>
               </div>
             </div>

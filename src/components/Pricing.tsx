@@ -110,7 +110,7 @@ export const Pricing = () => {
         {/* Additional Info */}
         <div className="text-center mt-12 p-6 bg-muted/20 rounded-xl">
           <p className="text-muted-foreground">
-            <strong>¿Necesitas algo personalizado?</strong> Contáctanos para obtener una cotización específica para tu institución de salud.
+            <strong>{t('pricing.custom.title')}</strong> {t('pricing.custom.desc')}
           </p>
         </div>
       </div>
